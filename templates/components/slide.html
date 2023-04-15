@@ -1,0 +1,77 @@
+{% load static %}  
+<div class="swiper swiper1">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="{% static 'images/slide1.png' %}" alt="Slide 1">
+        <div class="slide-overlay"></div>
+        <div class="slide-text">
+            <!-- Text content goes here -->
+            <h3>CALM NATURE</h3>
+            <p>When it comes to home design, style and functionality are two of the most important factors to consider. A well-designed home should not only look beautiful, but also be practical and functional for everyday living.</p>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="{% static 'images/slide2.png' %}" alt="Slide 1">
+        <div class="slide-text">
+            <!-- Text content goes here -->
+            <h3>Image Title 1</h3>
+            <p>Image Description 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://picsum.photos/1700/600" alt="Slide 1">
+        <div class="slide-text">
+            <!-- Text content goes here -->
+            <h3>Image Title 1</h3>
+            <p>Image Description 1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-prev" id="swiper1-button-prev">
+    </div>
+    <div class="swiper-button-next" id="swiper1-button-next">
+    </div>
+  
+    <div class="swiper-scrollbar"></div>
+</div>
+<div class="card-container">
+    <div class="cards">
+        <div class="card intro-card">
+            <img src="{% static 'images/card1.png' %}" alt="">
+            <div class="card-text">
+                <h4 class="card-title">
+                    Stylish Shades
+                </h4>
+                <p class="card-subtitle">
+                    Enhance Your Windows with Modern Window Blinds
+                </p>
+            </div>
+        </div>
+        <div class="card intro-card">
+            <img src="{% static 'images/card2.png' %}" alt="">
+            <div class="card-text">
+                <h4 class="card-title">
+                    Your Perfect Blend
+                </h4>
+                <p class="card-subtitle">
+                    Transform Your Space with Trendy Window Blinds that Offer Style
+                </p>
+            </div>
+        </div>
+        <div class="card intro-card">
+            <img src="{% static 'images/card3.png' %}" alt="">
+            <div class="card-text">
+                <h4 class="card-title">
+                    Window Blinds
+                </h4>
+                <p class="card-subtitle">
+                    Effortless Elegance for Your Windows
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

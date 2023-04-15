@@ -1,0 +1,409 @@
+@media (min-width: 1400px) {
+    .intro-card:first-of-type {
+        margin-right: 100px !important;
+    }
+    .intro-card:last-of-type {
+        margin-left: 100px !important;
+    }
+    .card-container {
+        width: 100% !important;
+    }
+    .intro-card {
+        width: 450px;
+        height: 300px;
+    }
+    .card-uni {
+        height: 400px;
+    }
+    .card-right {
+        padding-left: 50px !important;
+    }
+    .card-uni .img-left {
+        padding-left: 30px !important;
+    }
+
+    .card-uni .card-body h5 {
+        font-size: 45px !important;
+        font-weight: normal;
+        font-family: 'Open Sans';
+    }
+    .card-uni .card-body h6 {
+        font-size: 22px !important;
+        font-family: 'Open Sans';
+        padding-top: 22px;
+        font-weight: normal;
+    }
+    .card-uni .card-left {
+        padding-left: 40px !important;
+        padding-top: 25px;
+    }
+    
+    .swiper2 .card-body {
+        padding: 70px 48px !important;
+    }
+    .swiper2 .card-title {
+        margin-bottom: 15px;
+    }
+    /* Move Swiper navigation icons */
+    #swiper1-button-prev {
+        left: 50px !important; /* Set desired left value */
+        top: 340px;
+    }
+    
+    #swiper1-button-next {
+        right: 50px !important; /* Set desired right value */
+        top: 340px;
+    }
+
+   
+}
+@media (min-width: 1220px)  {
+    .swiper2 .card-body {
+        padding: 50px 48px;
+    }
+    .swiper2 .btn {
+        margin-top: 50px !important;
+    }
+
+    #swiper1-button-prev {
+        left: 0; /* Set desired left value */
+        top: 340px;
+    }
+    
+    #swiper1-button-next {
+        right: 0; /* Set desired right value */
+        top: 340px;
+    }
+    
+}
+@media (min-width: 1024px) {
+    .swiper2 .card-title {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+    .swiper2 .card-subtitle {
+        font-size: 30px;
+        padding-top: 6px;
+        font-weight: normal;
+    }
+    .swiper2 .card-text {
+        font-size: 19px;
+        padding-top: 5px;
+    }
+    .swiper2 .btn {
+        margin-top: 63px;
+    }
+
+    .swiper2 .card-body {
+        padding: 50px 28px;
+    }
+    .card-container {
+        width: 92%;
+    }
+    .nv-move-first a  {
+        margin-right: 7rem;
+    }
+    .nv-move-last a {
+        margin-left: 7rem;
+    }
+    .intro-card:first-of-type {
+        margin-right: 40px;
+    }
+    .intro-card:last-of-type {
+        margin-left: 40px;
+    }
+    
+    .cards {
+        top: -50px;
+    }
+
+
+    .card-uni .card-body {
+        padding: 29px 10px;
+        max-width: 700px;
+    }
+
+    
+    
+
+    .card-uni .card-body h5 {
+        font-size: 40px;
+        font-weight: normal;
+        font-family: 'Open Sans';
+    }
+    .card-uni .card-body h6 {
+        font-size: 20px;
+        font-family: 'Open Sans';
+        padding-top: 22px;
+        font-weight: normal;
+    }
+
+    #swiper-prev-2 {
+        top: 310px;
+        left: auto !important;
+        right: 109px !important;
+    }
+
+    .swiper2 .swiper-button-next {
+        right: 50px; /* Set desired right value */
+        top: 310px;
+    }
+    #swiper1-button-prev {
+        left: 0;
+        top: 340px;
+    }
+    #swiper1-button-next {
+        right: 0;
+        top: 340px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1026px) {
+    #swiper1-button-prev {
+        left: 0 !important;
+        top: 340px;
+    }
+    #swiper1-button-next {
+        right: 0 !important;
+        top: 340px;
+    }
+    .swiper2 .card-title {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .swiper2 .card-subtitle {
+        font-size: 22px;
+        padding-top: 15px;
+        font-weight: normal;
+    }
+    .swiper2 .card-text {
+        font-size: 17px;
+        padding-top: 5px;
+    }
+    .swiper2 .btn {
+        margin-top: 50px !important;
+    }
+    #swiper-prev-2 {
+        top: 290px;
+        left: auto !important;
+        right: 109px !important;
+    }
+    .swiper2 .card-img img {
+        height: 370px;
+    }
+    .swiper2 .card-left {
+        height: 370px;
+    }
+
+    .swiper2 .swiper-button-next {
+        right: 50px; /* Set desired right value */
+        top: 290px;
+    }
+    .card-uni-container {
+        margin-top: 30px;
+    }
+    .card-uni .card-body h5 {
+        font-size: 20px;
+        font-weight: normal;
+        font-family: 'Open Sans';
+        padding-bottom: 10px;
+    }
+    .card-uni .card-body h6 {
+        font-size: 16px;
+        font-family: 'Open Sans';
+        padding-top: 0;
+        font-weight: normal;
+    }
+    .navbar-toggler {
+        margin-top: 15px;
+    }
+    .custom-navbar .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        background-color: #444444;
+        padding-bottom: 20px;
+        z-index: 1000;
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .custom-navbar .navbar-nav .nav-item {
+        padding-top: 20px;
+    }
+
+}
+
+
+
+
+/* Responsive CSS */
+@media (max-width: 768px) { 
+    .footer-logo {
+        transform: translateX(-50px);
+        display: block;
+    }
+    .circle-cursor {
+        display: none;
+    }
+    .swiper3 {
+        cursor: default;
+    }
+    #swiper-prev-2 {
+        top: 320px;
+        left: auto !important;
+        right: 60px !important;
+    }
+
+    .swiper2 .swiper-button-next {
+        right: 20px; /* Set desired right value */
+        top: 320px;
+    }
+    .swiper .card-left {
+        margin-bottom: 30px;
+    }
+
+    .swiper2 .card-title {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .swiper2 .card-subtitle {
+        font-size: 22px;
+        padding-top: 8px;
+        font-weight: normal;
+    }
+    .swiper2 .card-text {
+        font-size: 18px;
+        padding-top: 12px;
+    }
+    .idea-layout .card h5 {
+        font-size: 22px;
+    }
+    .idea-layout .card h6 {
+        font-size: 16px;
+        
+    }
+
+    .idea-layout .card {
+        padding: 56px;
+    }
+    
+    .card-uni-container {
+        position: relative;
+    }
+    .card-uni .card-body h5 {
+        font-size: 20px;
+        font-weight: normal;
+        font-family: 'Open Sans';
+        padding-bottom: 10px;
+    }
+    .card-uni .card-body h6 {
+        font-size: 14px;
+        font-family: 'Open Sans';
+        padding-top: 0;
+        font-weight: normal;
+    }
+    .card-uni .card-left {
+        padding-left: 0;
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+    .card-uni .card-body {
+        padding: 0;
+    }
+    .card-right {
+        margin-top: 30px;
+    }
+    
+    .location {
+        display: none;
+    }
+    .phone-icon {
+        margin-left: 8px;
+    }
+    .slide-text h3 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .swiper1 {
+        height: 400px;
+    }
+    .slide-text p {
+        font-size: 15px;
+        padding-top: 10px;
+        width: 90%;
+    }
+    .slide-text {
+        padding: 15px 20px;
+    }
+    #swiper1-button-prev {
+        left: 0 !important;
+        top: 340px;
+    }
+    #swiper1-button-next {
+        right: 0 !important;
+        top: 340px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+    }
+    .intro-card {
+        padding: 25px 4px !important;
+        margin-top: 10px;
+        box-shadow: none !important;
+    }
+    .intro-card .card-title {
+        font-size: 20px;
+    }
+    .intro-card .card-subtitle {
+        font-size: 14px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;;
+    }
+    .cards {
+        margin-bottom: 50px;
+        top: 0;
+        z-index: 5;
+        width: 100%;
+        display: block !important;
+    }
+    .intro-card  img {
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-brand .logo {
+        transform: translateY(-10px);
+    }
+    .custom-navbar .navbar-collapse {
+        justify-content: flex-start;
+    }
+
+    .custom-navbar .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        background-color: #444444;
+        padding-bottom: 20px;
+        z-index: 1000;
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .custom-navbar .navbar-nav .nav-item {
+        padding-top: 20px;
+    }
+    .navbar-brand {
+        position: static;
+        transform: none;
+        text-align: center; /* Center align the logo */
+        margin-bottom: 1rem;
+    }
+
+    .custom-navbar .nav-item {
+        margin-right: 0;
+    }
+}

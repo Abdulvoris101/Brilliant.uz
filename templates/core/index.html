@@ -1,0 +1,17 @@
+
+{% extends "layout/base.html" %}
+{% load static %}
+
+{% block content %}
+    <main>
+        <div class="container-fluid">
+            {% include "components/slide.html" %}
+            {% include "components/card.html" %}
+            {% include "components/idea.html" %}
+            {% include "components/comp_slide.html" %}
+            {% include "components/catalog.html" %}
+            {% include "components/trend.html" %}
+        </div>
+    </main>
+
+{% endblock content %}
