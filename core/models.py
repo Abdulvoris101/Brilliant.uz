@@ -1,3 +1,12 @@
 from django.db import models
 
-# Create your models here.
+
+
+
+class IntroSlide(models.Model):
+    title = models.CharField(null=True, blank=True, max_length=255, default='Inro Slide')
+
+class IntroSlideContent(models.Model):
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='slides/')
+    intro = models.ForeignKey(IntroSlide, on_delete=models.CASCADE)
