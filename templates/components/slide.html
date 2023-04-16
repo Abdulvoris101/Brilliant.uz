@@ -1,41 +1,28 @@
-{% load static %}  
+{% load static %} 
 <div class="swiper swiper1">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide">
-        <img src="{% static 'images/slide1.png' %}" alt="Slide 1">
-        <div class="slide-overlay"></div>
-        <div class="slide-text">
-            <!-- Text content goes here -->
-            <h3>CALM NATURE Lorem ipsum dolor sit amet. </h3>
-          </div>
-      </div>
-      <div class="swiper-slide">
-        <img src="{% static 'images/slide2.png' %}" alt="Slide 1">
-        <div class="slide-text">
-            <!-- Text content goes here -->
-            <h3>Image Title 1</h3>
-            <p>Image Description 1</p>
-          </div>
+      {% for slide in intro_slide  %}
+        <div class="swiper-slide">
+            <img src="{{ slide.image.url }}" alt="Slide 1">
+            <div class="slide-overlay"></div>
+            <div class="slide-text">
+                <!-- Text content goes here -->
+                <h3>{{ slide.title }} </h3>
+            </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-        <img src="https://picsum.photos/1700/600" alt="Slide 1">
-        <div class="slide-text">
-            <!-- Text content goes here -->
-            <h3>Image Title 1</h3>
-            <p>Image Description 1</p>
-          </div>
-        </div>
-      </div>
+
+      {% endfor %}
+      
+      
     </div>
-    <div class="swiper-button-prev" id="swiper1-button-prev">
-    </div>
-    <div class="swiper-button-next" id="swiper1-button-next">
-    </div>
+</div>
+
+<div class="swiper-button-prev" id="swiper1-button-prev"></div>
+<div class="swiper-button-next" id="swiper1-button-next"></div>
   
-    <div class="swiper-scrollbar"></div>
+<div class="swiper-scrollbar"></div>
 </div>
 <div class="card-container">
     <div class="cards">
@@ -43,10 +30,10 @@
             <img src="{% static 'images/card1.png' %}" alt="">
             <div class="card-text">
                 <h4 class="card-title">
-                    Stylish Shades
+                    Конфиденциальность
                 </h4>
                 <p class="card-subtitle">
-                    Enhance Your Windows with Modern Window Blinds
+                    добейтесь частной жизни и спокойствия с помощью жалюзи для окон
                 </p>
             </div>
         </div>
@@ -54,10 +41,10 @@
             <img src="{% static 'images/card2.png' %}" alt="">
             <div class="card-text">
                 <h4 class="card-title">
-                    Your Perfect Blend
+                    Вечная привлекательность
                 </h4>
                 <p class="card-subtitle">
-                    Transform Your Space with Trendy Window Blinds that Offer Style
+                    Добавьте классический шарм в ваш дом с помощью жалюзи для окон
                 </p>
             </div>
         </div>
@@ -65,10 +52,10 @@
             <img src="{% static 'images/card3.png' %}" alt="">
             <div class="card-text">
                 <h4 class="card-title">
-                    Window Blinds
+                    Элегантность
                 </h4>
                 <p class="card-subtitle">
-                    Effortless Elegance for Your Windows
+                    Повысьте стиль и функциональность вашего дома
                 </p>
             </div>
         </div>

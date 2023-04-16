@@ -6,16 +6,14 @@
         <div class="row">
             <div class="col-md-7">
                 <div class="card-body card-left">
-                  <h5 class="card-title">Корпоративный институт</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Вебинары, экспресс-курсы в офисе, семинары и специальные конференции 
-                    для профессионалов в области солнцезащитных систем
-                    от экспертов компании AMIGO
+                  <h5 class="card-title">{{ benefit_card.first.title }}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">{{ benefit_card.first.text }}
                     </h6>
                 </div>
               </div>
               
           <div class="col-md-5">
-            <img src="{% static 'images/uni-1.png' %}" alt="Card Image" class="custom-img img-fluid">
+            <img src="{{ benefit_card.first.image.url }}" alt="Card Image" class="custom-img img-fluid">
           </div>
          
         </div>
@@ -23,18 +21,21 @@
 
       <div class="card card-uni">
         <div class="row">
-          <div class="col-md-5">
-            <img src="{% static 'images/uni-2.jpg' %}" alt="Card Image" class="custom-img img-left  img-fluid">
-          </div>
+          {% with second_object=benefit_card.1 %}
 
-          <div class="col-md-7">
-            <div class="card-body card-right">
-              <h5 class="card-title">Customizer Brilliant   </h5>
-              <h6 class="card-subtitle mb-2 text-muted">Удобный онлайн-инструмент для подбора, визуализации и расчета стоимости солнцезащитных систем AMIGO. Полный каталог материалов и систем с характеристиками.
-                </h6>
+            <div class="col-md-5">
+              <img src="{{ second_object.image.url }}" alt="Card Image" class="custom-img img-left  img-fluid">
             </div>
-          </div>
-         
+
+            <div class="col-md-7">
+              <div class="card-body card-right">
+                <h5 class="card-title">{{ second_object.title }}   </h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  {{ second_object.text }}
+                  </h6>
+              </div>
+            </div>
+          {% endwith %}
         </div>
       </div>
    </div>
