@@ -1,0 +1,53 @@
+{% extends "layout/base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid">
+        <section class="intro-section">
+            <div class="contact-bg" style="background-image: url('/static/images/contactbg.jpg');"></div>
+            <div class="intro-content">
+                <h1 class="intro-title">Контакт</h1>
+                <div class="intro-breadcrumb">Главная / Контакт</div>
+            </div>
+        </section>
+
+        <section class="section container contact-info">
+            <div class="row gx-5">
+                <div class="col-md-6">
+                  <!-- Contact Form -->
+                  <h2 class="contact-title">Связаться с нами</h2>
+
+                  <form class="form-contact">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="firstName">Имя</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName">
+                    
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="phoneNumber">Тел.номер</label>
+                            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
+                        </div>
+                    </div>
+                    <label for="message">Сообщения</label>
+                    <textarea id="message" rows="4" class="form-control" name="message"></textarea>
+                    <button type="submit" class="btn btn-primary mt-3 mb-4">Submit</button>
+                  </form>
+                </div>
+                <div class="col-md-6">
+                  <!-- Contact Info -->
+                    <div class="contact-text">
+                        <h2>Контактная информация</h2>
+                        <p><i class="material-icons">phone</i>  +998 97-722-11-11 </p>
+                        <p><i class="material-icons">email</i> jalyuzi@mail.com </p>
+                        <p><i class="material-icons">home</i> Beruniy, Huvaydo m. 100169 Tashkent, Uzbekistan </p>
+                    </div>
+                </div>
+              </div>
+        </section>
+    </div>
+
+    <div style="position:relative;overflow:hidden" class="mt-4"><a href="https://yandex.com/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a href="https://yandex.com/maps/10335/tashkent/?from=mapframe&ll=69.192872%2C41.342605&pt=69.192636%2C41.341975&source=mapframe&utm_medium=mapframe&utm_source=maps&z=18" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.com/map-widget/v1/?from=mapframe&ll=69.192872%2C41.342605&pt=69.192636%2C41.341975&source=mapframe&utm_source=mapframe&z=18"  style="width: 100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+
+{% endblock content %}

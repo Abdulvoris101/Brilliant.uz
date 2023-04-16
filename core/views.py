@@ -25,3 +25,9 @@ class AboutView(View):
     def get(self, request):
 
         return render(request, 'core/about.html')
+
+
+class ContactView(View):
+    def get(self, request):
+
+        return render(request, 'core/contact.html')

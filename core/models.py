@@ -42,3 +42,9 @@ class TopBlindsSlide(models.Model):
 class TopBlinds(models.Model):
     image = models.ImageField(upload_to='slides/')
     slide = models.ForeignKey(TopBlindsSlide, on_delete=models.CASCADE)
+
+class ContactUs(models.Model):
+    first_name = models.CharField(max_length=255)
+    phone_number = models.CharField(max_length=255)
+    message = models.CharField(max_length=255)
+

@@ -99,4 +99,7 @@ class BenefitCardAdmin(admin.ModelAdmin):
             # Return True if the model does not have an object
             return True
 
-
+@admin.register(ContactUs)
+class ContactUsAdmin(admin.ModelAdmin):
+    model = ContactUs
+    fields = ('first_name', 'phone_number', 'message')
