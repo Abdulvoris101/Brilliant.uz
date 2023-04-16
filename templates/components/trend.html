@@ -7,12 +7,11 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">
-            <img src="{% static 'images/slide1.png' %}" alt="Slide 1">
-          </div>
-          <div class="swiper-slide">
-            <img src="{% static 'images/slide2.png' %}" alt="Slide 1">
-          </div>
+          {% for item in topblinds  %}
+            <div class="swiper-slide">
+              <img src="{{ item.image.url }}" alt="Slide 1">
+            </div>
+          {% endfor %}
         </div>
 
         <div class="swiper-button-prev swiper-button-prev4" >

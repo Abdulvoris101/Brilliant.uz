@@ -12,89 +12,21 @@
     <div class="swiper3 swiper">
         <div class="swiper-wrapper">
 
+          {% for catalog in catalogs  %}
           <div class="swiper-slide">
                 <div class="card product-card">
                   <div class="product-card-img">
-                    <img src="https://picsum.photos/id/1015/300/200" class="img-fluid" alt="Product 1">
+                    <img src="{{ catalog.image.url }}" class="img-fluid" alt="Product 1">
                   </div>
                   
                   <div class="card-body">
-                    <h5>Уровень шума</h5>
+                    <h5>{{ catalog.title }}</h5>
                   </div>
                 </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="card product-card">
-                <div class="product-card-img">
-                  <img src="https://picsum.photos/id/1015/300/200" class="img-fluid" alt="Product 1">
-                </div>
-                
-                <div class="card-body">
-                  <h5>Уровень шума</h5>
-                </div>
-              </div>
           </div>
+          
+          {% endfor %}
 
-
-          <div class="swiper-slide">
-            <div class="card product-card">
-              <div class="product-card-img">
-                <img src="https://picsum.photos/id/1015/300/200" class="img-fluid" alt="Product 1">
-              </div>
-              <div class="card-body">
-                <h5>Уровень шума</h5>
-              </div>
-            </div>
-        </div>
-
-
-        <div class="swiper-slide">
-          <div class="card product-card">
-            <div class="product-card-img">
-              <img src="https://picsum.photos/id/1015/300/200" class="img-fluid" alt="Product 1">
-            </div>
-            <div class="card-body">
-              <h5>Уровень шума</h5>
-            </div>
-          </div>
-      </div>
-
-
-
-      <div class="swiper-slide">
-        <div class="card product-card">
-          <div class="product-card-img">
-            <img src="https://picsum.photos/id/1015/300/200" class="img-fluid" alt="Product 1">
-          </div>
-          <div class="card-body">
-            <h5>Уровень шума</h5>
-          </div>
-        </div>
-    </div>
-
-
-    <div class="swiper-slide">
-      <div class="card product-card">
-        <div class="product-card-img">
-          <img src="https://picsum.photos/id/1015/300/200" class="img-fluid" alt="Product 1">
-        </div>
-        <div class="card-body">
-          <h5>Уровень шума</h5>
-        </div>
-      </div>
-  </div>
-
-
-  <div class="swiper-slide">
-    <div class="card product-card">
-      <div class="product-card-img">
-        <img src="https://picsum.photos/id/1015/300/200" class="img-fluid" alt="Product 1">
-      </div>
-      <div class="card-body">
-        <h5>Уровень шума</h5>
-      </div>
-    </div>
 </div>
             
               

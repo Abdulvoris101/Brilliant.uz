@@ -1,4 +1,7 @@
 @media (min-width: 1400px) {
+    .product-card h5 {
+        width: 90%;
+    }
     .intro-card:first-of-type {
         margin-right: 100px !important;
     }
@@ -10,7 +13,7 @@
     }
     .intro-card {
         width: 450px;
-        height: 300px;
+        height: 320px;
     }
     .card-uni {
         height: 400px;
@@ -55,7 +58,7 @@
         top: 340px;
     }
     .slide-text h3 {
-        width: 600px;
+        width: 800px;
 
     }
 
@@ -125,6 +128,10 @@
     .card-uni .card-body {
         padding: 29px 10px;
         max-width: 700px;
+    }
+
+    .card-uni img {
+        height: 343px;
     }
 
     
@@ -239,10 +246,24 @@
 }
 
 
-
+@media (max-width:390px) {
+    .swiper3 .card-body {
+        padding: 0;
+    }
+}
 
 /* Responsive CSS */
 @media (max-width: 768px) { 
+    .swiper3 .card-body {
+        padding: 15px;
+    }
+    .swiper3 h5 {
+        font-size: 16px;
+    }
+    .product-card-img {
+        padding: 10px;
+    }
+    
     .circle_phone {
         bottom: 65px; /* Set to bottom */
         right: 15px; /* Set to right */

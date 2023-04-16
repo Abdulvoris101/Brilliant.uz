@@ -119,7 +119,32 @@ body {
     margin-right: auto;
     width: 100%;
 }
+.swiper1 .swiper-slide {
+    position: relative;
+}
+.swiper1 .swiper-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 
+}
+.intro-slide-img {
+    height: 470px;
+    width: 1845px;
+    object-fit: cover;
+    object-position: center center; 
+}
+.product-card-img img {
+    height: 200px;
+    width: 300px;
+}
+.product-card h5 {
+    font-weight: normal;
+}
 .swiper1 {
     width: 100%;
     margin-top: 30px;
@@ -267,8 +292,15 @@ body {
     font-weight: lighter !important;
 }
 .card-uni img {
-    height: 343px;
     width: 686px;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #fafafa;
+    z-index: 9999;
 }
 /* IDEA */
 
@@ -383,7 +415,7 @@ body {
 }
 
 .swiper3 .card-body {
-    padding: 10px 0 35px 35px;
+    padding: 10px 0 10px 35px;
 }
 
 .product-card-img {
@@ -442,10 +474,15 @@ body {
 }
 
 .swiper4 {
-    height: 316px;
+    height: 350px;
     margin-bottom: 30px;
 }
-
+.swiper4 img {
+    width: 1756px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center center;
+}
 .footer {
     background-color: #333; /* Set background color */
     color: #fff; /* Set text color */

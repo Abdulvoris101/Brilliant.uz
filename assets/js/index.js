@@ -104,16 +104,18 @@ document.addEventListener('mousemove', (e) => {
 // JavaScript
 document.addEventListener('DOMContentLoaded', function() {
   var navLinks = document.querySelectorAll('nav a');
-
+  console.log(navLinks);
   navLinks.forEach(function(link) {
     link.addEventListener('click', function(event) {
       event.preventDefault();
       var targetId = this.getAttribute('data-id');
-      console.log(targetId);
-      var targetElement = document.querySelector(targetId);
 
+      var targetElement = document.getElementById(targetId);
+      console.log(targetElement);
       if (targetElement) {
         // Scroll smoothly to the target section
+        console.log(targetElement.offsetTop);
+
         window.scrollTo({
           top: targetElement.offsetTop,
           behavior: 'smooth'
@@ -122,3 +124,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+// Get the header element
+var header = document.querySelector('.subnavbar');
+
+// Get the initial offset of the header
+var headerOffsetTop = header.offsetTop;
+
+// Function to handle scroll event
+function handleScroll() {
+  // Get the current scroll position
+  var scrollY = window.scrollY || window.pageYOffset;
+
+  // Check if the scroll position is greater than or equal to the initial offset of the header
+  if (scrollY > headerOffsetTop) {
+    // Add "fixed" class to the header
+    header.classList.add('fixed');
+  } else {
+    header.classList.remove('fixed');
+  }
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', handleScroll);

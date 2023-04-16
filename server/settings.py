@@ -227,6 +227,8 @@ JAZZMIN_SETTINGS = {
         "auth.Group": "fas fa-users",
         "core.introslide": "fas fa-image",
         "core.benefitcard": "fas fa-plus",
+        "core.EquipmentSlide": "fas fa-list",
+        "core.catalog": "fas fa-th",
     },
     # Icons that are used when one is not manually specified
     "default_icon_parents": "fas fa-chevron-circle-right",
