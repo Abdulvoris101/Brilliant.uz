@@ -254,6 +254,15 @@
 
 /* Responsive CSS */
 @media (max-width: 768px) { 
+    .fact-card {
+        margin-bottom: 20px;
+    }
+    .content-text-about h2 {
+        font-size: 24px;
+    }
+    .content-text-about p {
+        font-size: 16px;
+    }
     .swiper3 .card-body {
         padding: 15px;
     }

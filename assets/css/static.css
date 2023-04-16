@@ -1,0 +1,99 @@
+.intro-section {
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+  
+.intro-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-blend-mode: multiply;
+    background-color: rgba(51, 51, 51, 0.674);
+}
+  
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    font-family: 'Open Sans';
+}
+  
+  .intro-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .intro-breadcrumb {
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+.about-text-image {
+    border-radius: 8px;
+    width: 100%;
+    max-height: 420px;
+    margin-bottom: 25px;
+}
+
+.content-about {
+    margin-bottom: 30px;
+}
+
+.content-text-about {
+    font-family: 'Open Sans';
+}
+.content-text-about h2 {
+    padding-bottom: 5px;
+    padding-top: 2px;
+}
+
+
+.fact {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.fact-card {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    padding-top: 25px;
+    justify-content: center;
+    height: 170px;
+    width: 100%;
+    border: 1px dashed rgb(150, 74, 74);
+
+    border-radius: 5px;
+    
+}
+
+.fact-icon {
+    font-size: 38px;
+    margin-bottom: 0;
+}
+.fact-card .fact-title {
+    font-size: 18px;
+    font-weight: medium;
+    color: rgb(110, 110, 110);
+}
+.fact-card .fact-numbers {
+    font-size: 26px;
+    margin-top: 0;
+
+    padding-top: 10px;
+}

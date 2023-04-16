@@ -19,3 +19,9 @@ class IndexView(View):
         }
 
         return render(request, 'core/index.html', context)
+
+
+class AboutView(View):
+    def get(self, request):
+
+        return render(request, 'core/about.html')

@@ -72,50 +72,59 @@ let swiper4 = new Swiper('.swiper4', {
 
 });
 
-const swiperSection = document.querySelector('.swiper3');
-const circleCursor = document.querySelector('.circle-cursor');
-const cursorSize = 122; // Size of the circle cursor element
+if (window.location.pathname == '/') {
+  const swiperSection = document.querySelector('.swiper3');
+  const circleCursor = document.querySelector('.circle-cursor');
+  const cursorSize = 122; // Size of the circle cursor element
 
-swiperSection.addEventListener('mousemove', (e) => {
-  const x = e.clientX - cursorSize / 2 + 'px';
-  const y = e.clientY - cursorSize / 2 + 'px';
-  circleCursor.style.top = y;
-  circleCursor.style.left = x;
-  circleCursor.style.opacity = 1;
-});
+  swiperSection.addEventListener('mousemove', (e) => {
+    const x = e.clientX - cursorSize / 2 + 'px';
+    const y = e.clientY - cursorSize / 2 + 'px';
+    circleCursor.style.top = y;
+    circleCursor.style.left = x;
+    circleCursor.style.opacity = 1;
+  });
 
-swiperSection.addEventListener('mouseleave', () => {
-  circleCursor.style.opacity = 0;
-});
+  swiperSection.addEventListener('mouseleave', () => {
+    circleCursor.style.opacity = 0;
+  });
 
-swiperSection.addEventListener('mouseenter', () => {
-  document.body.style.cursor = 'none'; // Hide default cursor
-});
+  swiperSection.addEventListener('mouseenter', () => {
+    document.body.style.cursor = 'none'; // Hide default cursor
+  });
 
-document.addEventListener('mousemove', (e) => {
-  if (swiperSection.contains(e.target)) {
-    document.body.style.cursor = 'none'; // Hide default cursor within swiper section
-  } else {
-    document.body.style.cursor = 'auto'; // Show default cursor outside swiper section
-  }
-});
+  document.addEventListener('mousemove', (e) => {
+    if (swiperSection.contains(e.target)) {
+      document.body.style.cursor = 'none'; // Hide default cursor within swiper section
+    } else {
+      document.body.style.cursor = 'auto'; // Show default cursor outside swiper section
+    }
+  });
+
+}
 
 
 // JavaScript
+
 document.addEventListener('DOMContentLoaded', function() {
-  var navLinks = document.querySelectorAll('nav a');
-  console.log(navLinks);
+  var navLinks = document.querySelectorAll('.moveit');
+
   navLinks.forEach(function(link) {
-    link.addEventListener('click', function(event) {
+
+  link.addEventListener('click', function foo(event) {
       event.preventDefault();
       var targetId = this.getAttribute('data-id');
 
       var targetElement = document.getElementById(targetId);
-      console.log(targetElement);
+
+        
+      if (window.location.pathname != '/') {
+          window.location.replace(`http://localhost:8000/#${targetId}`);
+          
+      }
+
       if (targetElement) {
         // Scroll smoothly to the target section
-        console.log(targetElement.offsetTop);
-
         window.scrollTo({
           top: targetElement.offsetTop,
           behavior: 'smooth'
