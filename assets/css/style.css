@@ -140,7 +140,7 @@ body {
     left: 0;
     z-index: 2; /* Place text above the overlay */
     right: 0;
-    padding: 40px;
+    padding: 40px 70px;
     color: #fff;
 }
   
@@ -151,6 +151,7 @@ body {
   
 .slide-text h3 {
     font-size: 45px;
+    padding-top: 30px;
 }
   
 .slide-text p {
@@ -493,4 +494,38 @@ body {
 
 .social-media-icon:first-of-type {
     padding-left: 0;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1); /* Set initial scale */
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Set initial box shadow */
+    }
+    100% {
+      transform: scale(1.1); /* Set final scale */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Set final box shadow */
+    }
+  }
+
+.circle_phone {
+    position: fixed; /* Set position to fixed */
+    bottom: 65px; /* Set to bottom */
+    right: 85px; /* Set to right */
+    background-color: #32CFB0; /* Set background color */
+    width: 70px; /* Set width */
+    height: 70px; /* Set height */
+    border-radius: 50%; /* Set border radius to make a circle */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items horizontally */
+    z-index: 100;
+    cursor: pointer;
+    animation: pulse 1s infinite alternate; /* Apply animation */
+}
+
+  /* Material Icon */
+.circle_phone .material-icon {
+    
+    font-size: 36px; /* Set font size */
+    color: #fff; /* Set icon color */
 }

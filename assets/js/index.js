@@ -99,3 +99,26 @@ document.addEventListener('mousemove', (e) => {
     document.body.style.cursor = 'auto'; // Show default cursor outside swiper section
   }
 });
+
+
+// JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  var navLinks = document.querySelectorAll('nav a');
+
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      var targetId = this.getAttribute('data-id');
+      console.log(targetId);
+      var targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        // Scroll smoothly to the target section
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});

@@ -54,6 +54,10 @@
         right: 50px !important; /* Set desired right value */
         top: 340px;
     }
+    .slide-text h3 {
+        width: 600px;
+
+    }
 
    
 }
@@ -158,7 +162,7 @@
     }
 
 }
-@media (min-width: 768px) and (max-width: 1026px) {
+@media (min-width: 768px) and (max-width: 988px) {
     #swiper1-button-prev {
         left: 0 !important;
         top: 340px;
@@ -239,6 +243,15 @@
 
 /* Responsive CSS */
 @media (max-width: 768px) { 
+    .circle_phone {
+        bottom: 65px; /* Set to bottom */
+        right: 15px; /* Set to right */
+        width: 50px;
+        height: 50px;
+    }
+    .circle_phone .material-icon {
+        font-size: 22px;
+    }
     .footer-logo {
         transform: translateX(-50px);
         display: block;
@@ -322,8 +335,8 @@
         margin-left: 8px;
     }
     .slide-text h3 {
-        font-size: 20px;
-        padding-top: 20px;
+        font-size: 30px;
+        padding-top: 30px;
     }
     .swiper1 {
         height: 400px;
@@ -407,3 +420,4 @@
         margin-right: 0;
     }
 }
+
