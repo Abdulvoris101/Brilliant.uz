@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.core.validators import MinLengthValidator
 
 
 
@@ -17,6 +17,9 @@ class BenefitCard(models.Model):
     title = models.CharField(max_length=255)
     text = models.TextField()
 
+    def __str__(self):
+        return self.title
+
 
 class EquipmentSlide(models.Model):
     title = models.CharField(null=True, blank=True, max_length=255, default='Equipment Slide')
@@ -30,9 +33,16 @@ class EquipmentSlideContent(models.Model):
     slide = models.ForeignKey(EquipmentSlide, on_delete=models.CASCADE)
 
 
+    def __str__(self):
+        return self.title
+
+
 class Catalog(models.Model):
     image = models.ImageField(upload_to='products/')
     title = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.title
 
 
 class TopBlindsSlide(models.Model):
@@ -45,6 +55,13 @@ class TopBlinds(models.Model):
 
 class ContactUs(models.Model):
     first_name = models.CharField(max_length=255)
-    phone_number = models.CharField(max_length=255)
+    phone_number = models.CharField(max_length=255, validators=[MinLengthValidator(9)])
     message = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.first_name
+
+    class Meta:
+        verbose_name = 'ContactUs'
+        verbose_name_plural = 'ContactUs'
 

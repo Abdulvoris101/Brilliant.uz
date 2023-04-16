@@ -102,4 +102,4 @@ class BenefitCardAdmin(admin.ModelAdmin):
 @admin.register(ContactUs)
 class ContactUsAdmin(admin.ModelAdmin):
     model = ContactUs
-    fields = ('first_name', 'phone_number', 'message')
+    list_display = ('first_name', 'phone_number', 'message')

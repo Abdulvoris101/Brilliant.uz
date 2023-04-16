@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import View
 from .models import BenefitCard, IntroSlideContent, EquipmentSlideContent, Catalog, TopBlinds
+from .forms import ContactUsForm
+from django.contrib import messages
 
 class IndexView(View):
     def get(self, request):
@@ -29,5 +31,18 @@ class AboutView(View):
 
 class ContactView(View):
     def get(self, request):
+        form = ContactUsForm()
+        return render(request, 'core/contact.html', {'form': form})
 
-        return render(request, 'core/contact.html')
+    
+    def post(self, request):
+        form = ContactUsForm(request.POST)
+        
+
+        if form.is_valid():
+            messages.success(request, 'Ваща сообщения была отправлено!')
+            form.save()
+            # Add any other logic for form submission, such as sending emails or redirecting to success page
+            return redirect('contact')
+        else:
+            return render(request, 'core/contact.html', {'form': form})

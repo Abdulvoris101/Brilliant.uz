@@ -17,22 +17,51 @@
                   <!-- Contact Form -->
                   <h2 class="contact-title">Связаться с нами</h2>
 
-                  <form class="form-contact">
+                <form method="post" class="form-contact">
+                    {% csrf_token %}
+                    {% if form.non_field_errors %}
+                        <ul class="errorlist">
+                        {% for error in form.non_field_errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+
+                                    <!-- Render messages with Bootstrap classes -->
+                    {% for message in messages %}
+                        <div class="alert-{{ message.tags }} alert d-flex justify-content-between" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    {% endfor %}
+
                     <div class="row">
+                        <span class="error"> 
+                        {% if form.phone_number.errors %}
+                        Тел Номер 
+                        {% endif %}
+                             {{ form.phone_number.errors }}</span>
+                        <span class="error">{{ form.first_name.errors }}</span>
                         <div class="col-sm-6">
-                            <label for="firstName">Имя</label>
-                            <input type="text" class="form-control" id="firstName" name="firstName">
+                            {{ form.first_name.label_tag }} 
+                            {{ form.first_name }}
+                            
                     
                         </div>
                         <div class="col-sm-6">
-                            <label for="phoneNumber">Тел.номер</label>
-                            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
+                           
+
+                            {{ form.phone_number.label_tag }} 
+                            {{ form.phone_number }}
                         </div>
                     </div>
-                    <label for="message">Сообщения</label>
-                    <textarea id="message" rows="4" class="form-control" name="message"></textarea>
+                    {{ form.message.label_tag }} {{ form.message }}
+                    <span class="error">{{ form.message.errors }}</span>
+
                     <button type="submit" class="btn btn-primary mt-3 mb-4">Submit</button>
-                  </form>
+                </form>
+
+                
                 </div>
                 <div class="col-md-6">
                   <!-- Contact Info -->
