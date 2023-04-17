@@ -68,3 +68,8 @@ class ContactUs(models.Model):
 class Portfolio(models.Model):
     title = models.CharField(max_length=255)
     image = models.ImageField(upload_to='products/')
+
+class NumOfStatistic(models.Model):
+    experience = models.BigIntegerField()
+    clients = models.BigIntegerField()
+    products = models.BigIntegerField()

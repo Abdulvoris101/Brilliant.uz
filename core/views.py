@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from .models import BenefitCard, IntroSlideContent, EquipmentSlideContent, Catalog, TopBlinds, Portfolio
+from .models import BenefitCard, IntroSlideContent, EquipmentSlideContent, Catalog, TopBlinds, Portfolio, NumOfStatistic
 from .forms import ContactUsForm
 from django.contrib import messages
 
@@ -25,8 +25,8 @@ class IndexView(View):
 
 class AboutView(View):
     def get(self, request):
-
-        return render(request, 'core/about.html')
+        facts = NumOfStatistic.objects.first()
+        return render(request, 'core/about.html', {'facts': facts})
 
 class PortfolioView(View):
     def get(self, request):
