@@ -157,3 +157,16 @@ function handleScroll() {
 
 // Add scroll event listener
 window.addEventListener('scroll', handleScroll);
+
+
+$("[data-fancybox='gallery']").fancybox({
+  buttons: [
+      'slideShow',
+      'fullScreen',
+      'thumbs',
+      'close'
+  ],
+  thumbs: {
+      autoStart: true, // Automatically start the thumbs slideshow
+  }
+}); 

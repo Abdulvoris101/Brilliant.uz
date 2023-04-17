@@ -103,3 +103,14 @@ class BenefitCardAdmin(admin.ModelAdmin):
 class ContactUsAdmin(admin.ModelAdmin):
     model = ContactUs
     list_display = ('first_name', 'phone_number', 'message')
+
+
+@admin.register(Portfolio)
+class PortfolioAdmin(admin.ModelAdmin):
+    model = Portfolio
+    list_display = ('image_display', 'title')
+
+    def image_display(self, obj):
+        return mark_safe('<img src="{}" width="50" height="50" />'.format(obj.image.url))
+
+    image_display.short_description = 'Image'  # Set the column name in the admin list view

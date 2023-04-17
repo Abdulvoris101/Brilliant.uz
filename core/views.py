@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from .models import BenefitCard, IntroSlideContent, EquipmentSlideContent, Catalog, TopBlinds
+from .models import BenefitCard, IntroSlideContent, EquipmentSlideContent, Catalog, TopBlinds, Portfolio
 from .forms import ContactUsForm
 from django.contrib import messages
 
@@ -27,6 +27,14 @@ class AboutView(View):
     def get(self, request):
 
         return render(request, 'core/about.html')
+
+class PortfolioView(View):
+    def get(self, request):
+        portfolio = Portfolio.objects.all()
+        context = {
+            'portfolio': portfolio
+        }
+        return render(request, 'core/portfolio.html', context)
 
 
 class ContactView(View):

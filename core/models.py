@@ -65,3 +65,6 @@ class ContactUs(models.Model):
         verbose_name = 'ContactUs'
         verbose_name_plural = 'ContactUs'
 
+class Portfolio(models.Model):
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='products/')

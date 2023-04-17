@@ -1,0 +1,29 @@
+{% extends "layout/base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid">
+        <h3 class="portfolio-title">
+            Портфолио
+        </h3>
+        
+        <div class="grid-container">
+            {% for item in portfolio  %}
+                <div class="grid-item ">
+                    <a href="{{ item.image.url }}" data-fancybox="gallery" data-caption="{{item.title}}">
+                        <img src="{{ item.image.url }}" alt="Image 1">
+                        <div class="overlay">
+                            <span>{{ item.title }}</span>
+                        </div>
+                    </a>
+
+                </div>
+            {% endfor %}
+            <!-- Add more grid items as needed -->
+        </div>
+
+
+        <!-- Add more rows and columns for additional images as needed -->
+    </div>
+
+{% endblock content %}

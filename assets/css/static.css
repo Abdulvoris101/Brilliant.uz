@@ -152,3 +152,79 @@
 .contact-text i {
     padding-right: 15px;
 }
+
+.portfolio-title {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.grid-container {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: middle;
+    height: 400px;
+}
+.grid-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+.grid-item .overlay span {
+    color: #fff;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-item .overlay span {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
