@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  server:
+    container_name: server
+    build: ./server
+    command: sh 'start_prod.sh'
+    volumes:
+      - static_volume:/app/static
+      - /home/Brilliant/server/media:/app/media
+    ports:
+      - "8000:8000"
+    networks:
+      - main
+  
+    
+volumes:
+  static_volume:
+  media_volume:
+
+
+networks:
+  main:
+    external:
+      name: main
