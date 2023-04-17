@@ -3,7 +3,7 @@ version: '3'
 services:
 
   db:
-    container_name: postgres_db
+    container_name: brilliant_db
     image: postgres:13
     volumes:
       - postgres_data:/var/lib/postgresql/data/
@@ -12,11 +12,11 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     networks:
-      - main
+      - brilliant
 
   server:
     container_name: server
-    build: ./server
+    build: .
     command: sh 'start_prod.sh'
     volumes:
       - static_volume:/app/static
@@ -24,15 +24,18 @@ services:
     ports:
       - "8000:8000"
     networks:
-      - main
+      - brilliant
+    depends_on:
+      - db
   
     
 volumes:
   static_volume:
   media_volume:
+  postgres_data:
 
 
 
 networks:
-  main:
+  brilliant:
     driver: bridge
