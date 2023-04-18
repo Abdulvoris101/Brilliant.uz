@@ -11,6 +11,8 @@ services:
       - POSTGRES_DB=brilliant
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5433:5433"
     networks:
       - brilliant
 
