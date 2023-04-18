@@ -22,7 +22,7 @@ services:
       - static_volume:/app/static
       - /home/Brilliant/media:/app/media
     ports:
-      - "8000:8000"
+      - "8001:8001"
     networks:
       - brilliant
     depends_on:
