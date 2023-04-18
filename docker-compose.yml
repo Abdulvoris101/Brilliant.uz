@@ -15,12 +15,12 @@ services:
       - brilliant
 
   server:
-    container_name: server
+    container_name: brserver
     build: .
     command: sh 'start_prod.sh'
     volumes:
       - static_volume:/app/static
-      - /home/Brilliant/server/media:/app/media
+      - /home/Brilliant/media:/app/media
     ports:
       - "8000:8000"
     networks:
