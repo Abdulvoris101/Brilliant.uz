@@ -119,8 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         
       if (window.location.pathname != '/') {
-          window.location.replace(`http://localhost:8000/#${targetId}`);
-          
+          window.location.replace(`http://${window.location.hostname}/#${targetId}`);
       }
 
       if (targetElement) {
