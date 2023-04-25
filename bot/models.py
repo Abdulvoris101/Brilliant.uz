@@ -22,7 +22,7 @@ class BotTgGroup(models.Model):
         verbose_name_plural = "Telegram Group Id"
     
     def __str__(self):
-        self.telegramId
+        return str(self.telegramId)
 
 class Sticker(models.Model):
     stickerId = models.TextField()
