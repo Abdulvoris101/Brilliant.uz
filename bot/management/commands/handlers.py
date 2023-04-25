@@ -150,6 +150,16 @@ async def message_handle(message: types.Message, state=FSMContext):
     
 
 
+@dp.message_handler(commands=['id'])
+async def send_id(message: types.Message):   
+
+    await bot.send_message(chat_id=message.chat.id, text=f"""
+        chatId: {message.chat.id}
+        userId: {message.from_user.id}
+    """, reply_markup=language_keyboards)
+
+
+
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message, state=None):   
 
