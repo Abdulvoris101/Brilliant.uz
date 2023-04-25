@@ -10,7 +10,8 @@ body {
     height: 80px;
 }
 .logo {
-    width: 170px;
+    width: 210px;
+    margin-bottom: 5px;
 }
 
 .custom-navbar .nav-item {
@@ -58,7 +59,7 @@ body {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
 .navbar-toggler {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 0.25rem 0.5rem; /* Adjust the padding to make the button smaller */
     font-size: 0.9rem; 
     border: 0 !important;

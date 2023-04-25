@@ -62,9 +62,16 @@
 
     }
 
+    .container-alt {
+        max-width: 1600px !important;
+    }
    
 }
 @media (min-width: 1220px)  {
+    .container-alt {
+        max-width: 1100px;
+    }
+
     .swiper2 .card-body {
         padding: 50px 48px;
     }
@@ -84,6 +91,10 @@
     
 }
 @media (min-width: 1024px) {
+    .container-alt {
+        max-width: 950px;
+    }
+
     .swiper2 .card-title {
         font-size: 22px;
         padding-top: 10px;
@@ -170,6 +181,9 @@
 
 }
 @media (min-width: 768px) and (max-width: 988px) {
+    .container-alt {
+        max-width: 750px;
+    }
     #swiper1-button-prev {
         left: 0 !important;
         top: 340px;
@@ -419,7 +433,7 @@
     }
 
     .navbar-brand .logo {
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
     .custom-navbar .navbar-collapse {
         justify-content: flex-start;

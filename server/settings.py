@@ -1,6 +1,7 @@
 from pathlib import Path
 import environ
 import os
+import django
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,6 +21,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
+# django.setup()
+    
 
 # Application definition
 
@@ -32,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core'
+    'core',
+    'bot'
 ]
 
 MIDDLEWARE = [
@@ -110,6 +115,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+TOKEN_BOT = "6151750880:AAHq2YZOg2y9Uc1mWprn_iLSuqHvIgV3-dk"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/

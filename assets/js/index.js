@@ -117,9 +117,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
       var targetElement = document.getElementById(targetId);
 
-        
       if (window.location.pathname != '/') {
-          window.location.replace(`http://${window.location.hostname}/#${targetId}`);
+          window.location.replace(`http://${window.location.host}/#${targetId}`);
       }
 
       if (targetElement) {
