@@ -1,8 +1,10 @@
 from django.contrib import admin
-from .models import Account, Message, Sticker
+from .models import Account, Message, Sticker, BotTgGroup
 
 admin.site.register(Message)
 admin.site.register(Sticker)
+admin.site.register(BotTgGroup)
+
 
 @admin.register(Account)
 class AccountAdmin(admin.ModelAdmin):

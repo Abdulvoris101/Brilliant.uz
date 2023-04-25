@@ -1,4 +1,4 @@
-from bot.models import Account
+from bot.models import Account, BotTgGroup
 from asgiref.sync import sync_to_async
 
 @sync_to_async
@@ -21,7 +21,7 @@ def create_user(data):
     phoneNumber = data.get("phoneNumber")
 
     user = Account.objects.create(telegramId=telegramId, firstName=firstName, lastName=lastName, username=username, language=language, phoneNumber=phoneNumber)
-    print(user)
+    
     return user
     
 @sync_to_async
@@ -29,6 +29,14 @@ def user_me(telegram_id):
     user = Account.objects.get(telegramId=telegram_id)
     
     return user
+
+
+
+@sync_to_async
+def get_botgroup():
+    group = BotTgGroup.objects.first()
+    
+    return group.telegramId
 
 
 

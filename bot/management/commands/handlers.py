@@ -1,11 +1,10 @@
 from .run import dp, bot, types, UpdateUserState, ClientStateGroup, MessageState
 from .keyboards import start_keyboards, language_keyboards,  get_location_keyboards, contact_keyboards, settings_keyboard
-from bot.management.commands.manager import is_authenticated, user_me, get_user_language, set_language, create_user, update_user
+from bot.management.commands.manager import is_authenticated, get_botgroup, user_me, get_user_language, set_language, create_user, update_user
 from aiogram.dispatcher.filters import Text
 from aiogram.dispatcher.storage import FSMContext
 from .utils import send_message_local
 from aiogram.dispatcher.filters import Text
-
 
 
 @dp.message_handler(commands=['cancel'], state="*")
@@ -76,7 +75,6 @@ async def handle_contact(message: types.Message, state: FSMContext):
         }
         
         user = await create_user(data=data)
-        print(user)
 
 
     await state.finish()
@@ -140,10 +138,11 @@ async def chat(message: types.Message, state=None):
 async def message_handle(message: types.Message, state=FSMContext):
     language = await get_user_language(message.from_user.id)
     me = await user_me(telegram_id=message.from_user.id)
-    
+    group_id = await get_botgroup()
+
     msg = f"От: Brilliant\ntelegramId: <code>{message.from_user.id}</code>\nИмя: {message.from_user.first_name}\nUsername: @{message.from_user.username}\nТип: Сообщения\nТел.номер:{me.phoneNumber}\nСообшения: {message.text}"
 
-    await bot.send_message("-1001875684284", msg)
+    await bot.send_message(group_id, msg)
 
     await state.finish()
 
@@ -186,7 +185,7 @@ async def get_location(message: types.Location):
     me = await  user_me(telegram_id=message.from_user.id)
     msg = f"telegramId: <code>{message.from_user.id}</code>\nИмя: {message.from_user.first_name}\nUsername: @{message.from_user.username}\nТип: Быстрый заказ\nТел.номер:{me.phoneNumber}\nЛокация: {message.location.latitude}, {message.location.longitude}"
 
-    await bot.send_message("-1001875684284", msg)
+    await bot.send_message("", msg)
 
 
     await bot.send_message(message.from_user.id, "Buyurtma qabul qilindi tez orada siz bilan bog'lanamiz")

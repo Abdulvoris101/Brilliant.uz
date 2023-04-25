@@ -14,6 +14,15 @@ class Account(models.Model):
         return self.firstName
 
 
+class BotTgGroup(models.Model):
+    telegramId = models.CharField(max_length=500, default='-1001875684284')
+
+    class Meta:
+        verbose_name = "Telegram Group Id"
+        verbose_name_plural = "Telegram Group Id"
+    
+    def __str__(self):
+        self.telegramId
 
 class Sticker(models.Model):
     stickerId = models.TextField()
