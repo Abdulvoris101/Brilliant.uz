@@ -52,7 +52,7 @@ MIDDLEWARE = [
 ] 
 
 
-CSRF_TRUSTED_ORIGINS = ['http://90.156.226.196', 'http://brilliant.uz']
+CSRF_TRUSTED_ORIGINS = ['http://90.156.226.196', 'http://brilliant.uz',  'https://brilliant.uz']
 
 ROOT_URLCONF = 'server.urls'
 
