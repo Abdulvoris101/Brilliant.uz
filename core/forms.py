@@ -9,7 +9,7 @@ class ContactUsForm(forms.ModelForm):
         fields = ['first_name', 'phone_number', 'message']
         widgets = {
             'first_name': forms.TextInput(attrs={'class': 'form-control', 'style': 'flex: 1'}),
-            'phone_number': forms.TextInput(attrs={'class': 'form-control', 'style': 'flex: 1', 'placeholder': '909109999'}),
+            'phone_number': forms.TextInput(attrs={'class': 'form-control', 'style': 'flex: 1', 'placeholder': '97722xxxx'}),
             'message': forms.Textarea(attrs={'class': 'form-control', 'rows': '4'}),
         }
 
