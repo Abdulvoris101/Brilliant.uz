@@ -1,27 +1,27 @@
-{% load static %}
+{% load static i18n %}
 <div class="footer ">
    <div class="container-fluid">
     <div class="row gx-4">
         <!-- Footer logo column -->
         <div class="col-md-4">
-            <img src="{% static 'images/logo.png' %}" class="footer-logo logo" alt="">
+            <img src="{% static 'images/logo.png' %}" class="footer-logo logo" alt="Brilliant.uz">
         </div>
         <!-- Footer title column -->
         <div class="col-md-1 me-5">
           <div class="footer-title">
-            Информация
+            {% trans 'Информация' %}
           </div>
           <div class="footer-links">
-            <a href="#" class="footer-link">Главная</a>
-            <a href="#" class="footer-link">Сервисы</a>
-            <a href="#" class="footer-link">О нас</a>
-            <a href="#" class="footer-link">Контакт</a>
+            <a href="#" class="footer-link">{% trans 'Главная' %}</a>
+            <a href="#" class="footer-link">{% trans 'Сервисы' %}</a>
+            <a href="#" class="footer-link">{% trans 'О нас' %}</a>
+            <a href="#" class="footer-link">{% trans 'Контакт' %}</a>
           </div>
         </div>
 
         <div class="col-md-2">
             <div class="footer-title">
-                Аддресс
+                {% trans 'Аддресс' %}
             </div>
             <div class="footer-desc">
                 Beruniy, Huvaydo m. 100169 Tashkent, Uzbekistan
@@ -30,7 +30,7 @@
 
         <div class="col-md-2">
             <div class="footer-title">
-                Контакты
+                {% trans 'Контакты' %}
             </div>
             <div class="footer-links">
               <a href="#" class="footer-link">+998 97-722-11-11</a>

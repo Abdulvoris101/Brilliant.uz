@@ -1,13 +1,28 @@
 {% extends "layout/base.html" %}
-{% load static %}
+{% load static i18n %}
+
+{% block seo %}
+
+<title>Brilliant.uz {% trans 'Связаться с нами' %}</title>
+<meta name="keywords" content="жалюзи контакты, установка, ремонт" />
+<meta name="description" content="Свяжитесь с нами для заказа жалюзи для окон. Наши менеджеры готовы помочь вам с выбором продукции, рассчитать стоимость и организовать доставку. Мы гарантируем быстрый и качественный сервис. Наши контактные данные на странице «Контакты»">
+<link rel="canonical" href="https://brilliant.uz/contact/" />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="Brilliant - Связаться с нами" />
+<meta property="og:description" content="Brilliant - ваш надежный партнер в области жалюзи Мы предлагаем широкий ассортимент штор, жалюзи, ролетов и других изделий, а также услуги по установке." />
+<meta property="og:image" content="https://brilliant.uz/static/images/logo.png" />
+<meta property="og:url" content="https://brilliant.uz/contact/" />
+
+  
+{% endblock seo %}
 
 {% block content %}
     <div class="container-fluid">
         <section class="intro-section">
             <div class="contact-bg" style="background-image: url('/static/images/contactbg.jpg');"></div>
             <div class="intro-content">
-                <h1 class="intro-title">Контакт</h1>
-                <div class="intro-breadcrumb">Главная / Контакт</div>
+                <h1 class="intro-title">{% trans 'Контакт' %}</h1>
+                <div class="intro-breadcrumb">{% trans 'Главная / Контакт' %}</div>
             </div>
         </section>
 
@@ -15,7 +30,7 @@
             <div class="row gx-5">
                 <div class="col-md-6">
                   <!-- Contact Form -->
-                  <h2 class="contact-title">Связаться с нами</h2>
+                  <h2 class="contact-title">{% trans 'Связаться с нами' %}</h2>
 
                 <form method="post" class="form-contact">
                     {% csrf_token %}
@@ -38,7 +53,7 @@
                     <div class="row">
                         <span class="error"> 
                         {% if form.phone_number.errors %}
-                        Тел Номер 
+                        {% trans 'Тел Номер' %} 
                         {% endif %}
                              {{ form.phone_number.errors }}</span>
                         <span class="error">{{ form.first_name.errors }}</span>
@@ -66,7 +81,7 @@
                 <div class="col-md-6">
                   <!-- Contact Info -->
                     <div class="contact-text">
-                        <h2>Контактная информация</h2>
+                        <h2>{% trans 'Контактная информация' %}</h2>
                         <p><i class="material-icons">phone</i>  +998 97-722-11-11 </p>
                         <p><i class="material-icons">email</i> BrilliantUzbekistan@gmail.com </p>
                         <p><i class="material-icons">home</i> Beruniy, Huvaydo m. 100169 Tashkent, Uzbekistan </p>

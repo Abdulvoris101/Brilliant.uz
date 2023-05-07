@@ -1,11 +1,11 @@
-{% load static %} 
+{% load static  i18n %} 
 <div class="swiper swiper1">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
       {% for slide in intro_slide  %}
         <div class="swiper-slide">
-            <img src="{{ slide.image.url }}" class="intro-slide-img" alt="Slide 1">
+            <img src="{{ slide.image.url }}" class="intro-slide-img" alt="{{slide.title}}">
             <div class="slide-overlay"></div>
             <div class="slide-text">
                 <!-- Text content goes here -->
@@ -27,35 +27,35 @@
 <div class="card-container">
     <div class="cards">
         <div class="card intro-card">
-            <img src="{% static 'images/card1.png' %}" alt="">
+            <img src="{% static 'images/card1.png' %}" alt="Конфиденциальность">
             <div class="card-text">
                 <h4 class="card-title">
-                    Конфиденциальность
+                    {% trans 'Конфиденциальность' %}
                 </h4>
                 <p class="card-subtitle">
-                    добейтесь частной жизни и спокойствия с помощью жалюзи для окон
+                    {% trans 'добейтесь частной жизни и спокойствия с помощью жалюзи для окон' %}
                 </p>
             </div>
         </div>
         <div class="card intro-card">
-            <img src="{% static 'images/card2.png' %}" alt="">
+            <img src="{% static 'images/card2.png' %}" alt="Вечная привлекательность">
             <div class="card-text">
                 <h4 class="card-title">
-                    Вечная привлекательность
+                    {% trans 'Вечная привлекательность' %}
                 </h4>
                 <p class="card-subtitle">
-                    Добавьте классический шарм в ваш дом с помощью жалюзи для окон
+                    {% trans 'Добавьте классический шарм в ваш дом с помощью жалюзи для окон' %}
                 </p>
             </div>
         </div>
         <div class="card intro-card">
-            <img src="{% static 'images/card3.png' %}" alt="">
+            <img src="{% static 'images/card3.png' %}" alt="Элегантность">
             <div class="card-text">
                 <h4 class="card-title">
-                    Элегантность
+                    {% trans 'Элегантность' %}
                 </h4>
                 <p class="card-subtitle">
-                    Повысьте стиль и функциональность вашего дома
+                    {% trans 'Повысьте стиль и функциональность вашего дома' %}
                 </p>
             </div>
         </div>

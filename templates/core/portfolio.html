@@ -1,17 +1,30 @@
 {% extends "layout/base.html" %}
-{% load static %}
+{% load static i18n %}
 
+{% block seo %}
+
+
+<title>Brilliant.uz {% trans 'Портфолио' %}</title>
+<meta name="keywords" content="Портфолио, продукты, жалюзи категории" />
+<meta name="description" content="Ознакомьтесь с нашим портфолио жалюзи для окон. Мы предлагаем широкий выбор продукции разных стилей, цветов и материалов, чтобы удовлетворить любой вкус">
+<link rel="canonical" href="https://brilliant.uz/portfolio/" />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="Brilliant - Портфолио" />
+<meta property="og:description" content="Brilliant - ваш надежный партнер в области жалюзи Мы предлагаем широкий ассортимент штор, жалюзи, ролетов и других изделий, а также услуги по установке." />
+<meta property="og:image" content="https://brilliant.uz/static/images/logo.png" />
+<meta property="og:url" content="https://brilliant.uz/portfolio/" />
+{% endblock seo %}
 {% block content %}
     <div class="container-fluid">
         <h3 class="portfolio-title">
-            Портфолио
+            {% trans 'Портфолио' %}
         </h3>
         
         <div class="grid-container">
             {% for item in portfolio  %}
                 <div class="grid-item ">
                     <a href="{{ item.image.url }}" data-fancybox="gallery" data-caption="{{item.title}}">
-                        <img src="{{ item.image.url }}" alt="Image 1">
+                        <img src="{{ item.image.url }}" alt="{{ item.title }}">
                         <div class="overlay">
                             <span>{{ item.title }}</span>
                         </div>

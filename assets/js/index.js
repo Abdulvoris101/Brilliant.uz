@@ -168,3 +168,20 @@ $("[data-fancybox='gallery']").fancybox({
       autoStart: true, // Automatically start the thumbs slideshow
   }
 }); 
+
+
+
+function selectLang() {
+  var selectedValue = document.getElementById("languageSelect").value;
+  
+  if (selectedValue == 'uz') {
+    newUrl = window.location.href.replace('ru', 'uz')
+    window.location.replace(newUrl)
+  } else if (selectedValue == 'ru') {
+    newUrl = window.location.href.replace('uz', 'ru')
+
+    window.location.replace(newUrl)
+
+
+  }
+}

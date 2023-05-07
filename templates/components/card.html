@@ -13,7 +13,7 @@
               </div>
               
           <div class="col-md-5">
-            <img src="{{ benefit_card.first.image.url }}" alt="Card Image" class="custom-img img-fluid">
+            <img src="{{ benefit_card.first.image.url }}" alt="{{ benefit_card.first.title }}" class="custom-img img-fluid">
           </div>
          
         </div>
@@ -24,7 +24,7 @@
           {% with second_object=benefit_card.1 %}
 
             <div class="col-md-5">
-              <img src="{{ second_object.image.url }}" alt="Card Image" class="custom-img img-left  img-fluid">
+              <img src="{{ second_object.image.url }}" alt="{{second_object.title}}" class="custom-img img-left  img-fluid">
             </div>
 
             <div class="col-md-7">

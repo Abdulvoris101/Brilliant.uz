@@ -1,0 +1,242 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-07 00:19+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: env/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:7
+#: env/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:221
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:207
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:222
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+
+#: templates/components/catalog.html:4 templates/components/navbar.html:61
+msgid "Каталогы"
+msgstr "Kataloglar"
+
+#: templates/components/footer.html:12
+msgid "Информация"
+msgstr "Informatsiya"
+
+#: templates/components/footer.html:15 templates/components/navbar.html:49
+msgid "Главная"
+msgstr "Bosh sahifa"
+
+#: templates/components/footer.html:16
+msgid "Сервисы"
+msgstr "Xizmatlar"
+
+#: templates/components/footer.html:18 templates/components/navbar.html:64
+#: templates/core/contact.html:9
+msgid "Контакт"
+msgstr "Kontakt"
+
+#: templates/components/footer.html:24
+msgid "Аддресс"
+msgstr "Address"
+
+#: templates/components/footer.html:33
+msgid "Контакты"
+msgstr "Kontaktlar"
+
+#: templates/components/idea.html:6
+msgid "Яркые цвета"
+msgstr "Yorqin ranglar"
+
+#: templates/components/idea.html:7
+msgid "Классический и чистый стиль с нами"
+msgstr "Klassik va sof uslub biz bilan"
+
+#: templates/components/idea.html:8 templates/components/idea.html:18
+msgid "Покупать"
+msgstr "Sotib olish"
+
+#: templates/components/idea.html:16
+msgid "Нестандартные идеи"
+msgstr "Nostandart Idealar"
+
+#: templates/components/idea.html:17
+msgid "Используйте свою творческую фантазию"
+msgstr "Ijodiy tasavvuringizdan foydalaning"
+
+#: templates/components/navbar.html:52
+msgid "Комлектация"
+msgstr "Uskunalar"
+
+#: templates/components/navbar.html:55 templates/core/about.html:10
+msgid "О компании"
+msgstr "Xaqimizda"
+
+#: templates/components/slide.html:33
+msgid "Конфиденциальность"
+msgstr "Xavfsizlik"
+
+#: templates/components/slide.html:36
+msgid "добейтесь частной жизни и спокойствия с помощью жалюзи для окон"
+msgstr "deraza pardalari bilan shaxsiy hayot va osoyishtalikka erishing"
+
+#: templates/components/slide.html:44
+msgid "Вечная привлекательность"
+msgstr "Abadiy jozibadorlik"
+
+#: templates/components/slide.html:47
+msgid "Добавьте классический шарм в ваш дом с помощью жалюзи для окон"
+msgstr "Deraza jalyuzilar bilan uyingizga klassik joziba qo'shing"
+
+#: templates/components/slide.html:55
+msgid "Элегантность"
+msgstr "Nafislik"
+
+#: templates/components/slide.html:58
+msgid "Повысьте стиль и функциональность вашего дома"
+msgstr "Uyingizning uslubi va funksionalligini yaxshilang"
+
+#: templates/components/trend.html:6
+msgid "Brilliant жалюзи для вашего дома"
+msgstr "Uyingiz uchun Brilliant jalyuzilar"
+
+#: templates/components/trend.html:9
+msgid ""
+"Maxsus pardalar va jalyuzilar - bizning keng tanlovimiz bilan uyingizni yorqinlashtiring "
+"uslublar va ranglar. Biz yuqori sifatli pardalar va jalyuzilarni  taqdim etamiz "
+"yetkazib berish va oson o'rnatish. jalyuzi, rulloniy shtori larni tanlang "
+"vertikalniy jalyuzi  qulaylik yaratish uchun oyna bezaklarining boshqa turlari"
+"uyingizda atmosfera. Bizda har qanday deraza  uchun yechimlar mavjud - "
+"bugun buyurtma bering va iloji boricha tezroq yangi jalyuzilaringizni qo'lga kiriting"
+msgstr ""
+
+#: templates/components/trend.html:12
+msgid "Топ Жалюзи"
+msgstr "Yuqori jalyuzlar"
+
+#: templates/core/about.html:11
+msgid "Главная / О компании"
+msgstr "Bosh sahifa / Kompaniya haqida"
+
+#: templates/core/about.html:22
+msgid "Жалюзи от компании Brilliant.uz"
+msgstr "Brilliant.uz kompaniyasidan jalyuzlar"
+
+#: templates/core/about.html:24
+msgid ""
+"Brilliant.UZ 2000 yilda tashkil topgan. Bizning tashkilotimiz "
+"Deraza dizayni kompaniyasi sifatida tashkil etilgan"
+"Kompaniyaning barcha turdagi vertikal va ishlab chiqarish faoliyat yo'nalishlari."
+"gorizontal, rolikli panjurlar Yogochdan yasalgan pardalar. Har yili biz"
+"raqobatbardosh narxlar orqali sotish hajmini oshirishga intiling, shuningdek"
+"ofisda ishlaydigan yuqori malakali xodimlar tufayli. do'konda va "
+"ishlab chiqarishda, ular muntazam ravishda qo'shimcha ta'limdan o'tadilar"
+"xizmatlar sifatini oshirish. Mahsulotlarimizni sotib olgan mijozlar-"
+"Ko'rlar bir yil muddatga kafolatlanadi. Sifat nazorati bo'limi tomonidan doimiy tekshiruvlar "
+"ishlab chiqarilgan materiallar va butlovchi qismlar bizga bunday kafolatni berishga imkon beradi."
+"Ishlab chiqarish uskunalari doimiy ravishda yangilanadi, bu ijobiy"
+"ishlab chiqarish vaqtiga ta'sir qiladi."
+msgstr ""
+
+#: templates/core/about.html:27
+msgid ""
+"Endi kompaniyamiz faoliyatida ustuvor yo'nalishlarni ajratib bo'lmaydi, biz"
+"Biz faoliyatimizning har bir sohasiga bir xil e'tibor beramiz."
+"Kompaniyamiz uchun eng muhimi - texnologiya va qulaylik shioriga amal qilish"
+"bizning faoliyatimiz doirasi"
+msgstr ""
+
+#: templates/core/about.html:42
+msgid "Ish tajribasi"
+msgstr ""
+
+#: templates/core/about.html:51
+msgid "Счасливые клиенты"
+msgstr "Baxtli mijozlar"
+
+#: templates/core/about.html:60
+msgid "Продукты"
+msgstr "Mahsulotlar"
+
+#: templates/core/about.html:74
+msgid "Клиент - это наше Всё !"
+msgstr "Mijoz bizning hamma narsamiz!"
+
+#: templates/core/about.html:76
+msgid ""
+"Hech narsa bizga juda arzonga tushmaydi va xushmuomalalik kabi qimmatga tushmaydi"
+"Har qanday xarid jarayonida zavqdan ko'ra muhimroq nima bo'lishi mumkin"
+"mahsulot sotib olish va isrofgarchilikni his qilishdan ko'ra yomonroq narsa bo'lishi mumkin"
+"pul, vaqt va kuch? Biroz vaqt oldin men biriga tashrif buyurishim kerak edi "
+"xizmatlaridan hamma vaqti-vaqti bilan foydalanishi kerak bo'lgan tashkilot"
+"Bizdan. Ajablanarli va dahshat bilan men bu ulkan narsani topdim"
+"Har bir shaharda mavjud bo'lgan tashkilotda mutlaqo hech narsa o'zgarmadi"
+"tashkil etilganidan beri mijozlar bilan munosabatlar! U erda bo'lgani kabi "
+"Bir xil xodimlar 40 yil oldin ishlaydi, ular uchun so'zi"
+"mijozlarga e'tibor qaratish ehtimol suiiste'mollik atamasi.  keyin"
+"Ushbu xodimlar bilan bir daqiqalik muloqotda men psixologik SHOKni boshdan kechirdim"
+"(eslab) mijoz bilan muloqot qilish uslubi haqida juda ko'p qiziqarli narsalarni! Biz sizga taqdim etamiz"
+"Brilliant - yangi avlod kompaniyasi! Men buni to'liq aytaman "
+"Kompaniyamiz xodimlarining o'ziga va kuchiga ishonch"
+msgstr ""
+
+#: templates/core/contact.html:10
+msgid "Главная / Контакт"
+msgstr "Uy / Kontakt"
+
+#: templates/core/contact.html:41
+msgid "Тел Номер"
+msgstr "Tel Nomer"
+
+#: templates/core/contact.html:69
+msgid "Контактная информация"
+msgstr "Bog'lanish uchun ma'lumot"
+
+#: templates/components/navbar.html:28
+msgid "Русский"
+msgstr "Ruscha"
+
+#: templates/components/navbar.html:29
+msgid "Узбекский"
+msgstr "Uzbekcha"
+
+#: templates/components/footer.html:17 templates/core/about.html:6
+msgid "О нас"
+msgstr "Xaqimizda"
+
+#: templates/components/navbar.html:58 templates/core/portfolio.html:7
+#: templates/core/portfolio.html:17
+msgid "Портфолио"
+msgstr "Portfolio"
+
+#: templates/core/contact.html:6 templates/core/contact.html:30
+msgid "Связаться с нами"
+msgstr "Biz bilan bog'lanish"
+
+#: templates/core/index.html:9
+msgid "Топовые Жалюзи в Ташкенте и цены"
+msgstr "Toshkentdagi eng yaxshi jalyuzilar va narxlari"

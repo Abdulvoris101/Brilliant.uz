@@ -4,6 +4,22 @@ from .models import BenefitCard, IntroSlideContent, EquipmentSlideContent, Catal
 from .forms import ContactUsForm
 from django.contrib import messages
 
+from django.contrib.sitemaps import Sitemap
+from django.shortcuts import reverse
+
+class StaticViewSitemap(Sitemap):
+    priority = 1
+    changefreq = 'daily'
+
+
+    i18n = True
+
+    def items(self):
+        return ['about', 'portfolio', 'contact', 'index']
+        
+    def location(self, item):
+        return reverse(item)
+
 class IndexView(View):
     def get(self, request):
         intro_slide = IntroSlideContent.objects.all()

@@ -264,10 +264,16 @@
     .swiper3 .card-body {
         padding: 0;
     }
+    .email-icon {
+        display: none;
+    }
 }
 
 /* Responsive CSS */
 @media (max-width: 768px) { 
+    .email-icon {
+        display: none;
+    }
     .fact-card {
         margin-bottom: 20px;
     }

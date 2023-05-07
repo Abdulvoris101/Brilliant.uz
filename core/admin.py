@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import *
 from django.utils.html import mark_safe
-
+from modeltranslation.admin import TranslationAdmin
 
 @admin.register(NumOfStatistic)
 class NumOfStatisticAdmin(admin.ModelAdmin):
@@ -24,7 +24,7 @@ class IntroSlideContent(admin.TabularInline):
     
 
 @admin.register(IntroSlide)
-class IntroSlideAdmin(admin.ModelAdmin):
+class IntroSlideAdmin(TranslationAdmin):
     inlines = [IntroSlideContent]
     readonly_fields = ('title', )
     list_display = ('title', )
@@ -46,7 +46,7 @@ class TopBlindsAdmin(admin.TabularInline):
 
 
 @admin.register(TopBlindsSlide)
-class TopBlindsSlideAdmin(admin.ModelAdmin):
+class TopBlindsSlideAdmin(TranslationAdmin):
     inlines = [TopBlindsAdmin]
     readonly_fields = ('title', )
     list_display = ('title', )
@@ -66,7 +66,7 @@ class EquiepmentSlideContentAdmin(admin.TabularInline):
     extra = 1
 
 @admin.register(EquipmentSlide)
-class EquiepmentSlideAdmin(admin.ModelAdmin):
+class EquiepmentSlideAdmin(TranslationAdmin):
     inlines = [EquiepmentSlideContentAdmin]
     readonly_fields = ('title', )
 
@@ -84,7 +84,7 @@ class EquiepmentSlideAdmin(admin.ModelAdmin):
             return True
 
 @admin.register(Catalog)
-class CatalogAdmin(admin.ModelAdmin):
+class CatalogAdmin(TranslationAdmin):
     list_display = ('image_display', 'title')
 
     def image_display(self, obj):
@@ -95,7 +95,7 @@ class CatalogAdmin(admin.ModelAdmin):
 
 
 @admin.register(BenefitCard)
-class BenefitCardAdmin(admin.ModelAdmin):
+class BenefitCardAdmin(TranslationAdmin ):
     model = BenefitCard
     list_display = ('image_display', 'title', 'text')
     ordering = ('id', )

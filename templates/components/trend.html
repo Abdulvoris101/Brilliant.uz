@@ -1,7 +1,15 @@
-{% load static %}  
+{% load static i18n %}  
+
 <div class="container-fluid" data-section="#section1">
+      
+    <h1 class="seo-title">
+        {% trans 'Brilliant жалюзи для вашего дома' %}
+    </h1>
+    <p class="seo-text">
+      {% trans 'Шторы для окон на заказ – преобразите свой дом с нашим широким выбором стилей и цветов. Мы предлагаем высококачественные шторы с бесплатной доставкой и простой установкой. Выбирайте жалюзи, рулонные шторы, вертикальные жалюзи и другие виды оконных украшений для создания уютной атмосферы в вашем доме. У нас есть решения для любых оконных проемов – заказывайте уже сегодня и получите свои новые шторы в кратчайшие сроки' %}
+    </p>
     <h3 class="product-card-title">
-        Топ Жалюзи
+        {% trans 'Топ Жалюзи' %}
     </h3>
     <div class="swiper swiper4">
         <!-- Additional required wrapper -->
@@ -9,7 +17,7 @@
           <!-- Slides -->
           {% for item in topblinds  %}
             <div class="swiper-slide">
-              <img src="{{ item.image.url }}" alt="Slide 1">
+              <img src="{{ item.image.url }}" alt="Топ Жалюзи">
             </div>
           {% endfor %}
         </div>

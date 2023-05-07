@@ -1,7 +1,7 @@
-{% load static %}
+{% load static i18n %}
 <div class="container-fluid" id="catalogs">
     <h3 class="product-card-title">
-      Каталогы
+      {% trans 'Каталогы' %}
     </h3>
     <div class="circle-cursor">
       <i class="material-icons">arrow_left</i>
@@ -16,7 +16,7 @@
           <div class="swiper-slide">
                 <div class="card product-card">
                   <div class="product-card-img">
-                    <img src="{{ catalog.image.url }}" class="img-fluid" alt="Product 1">
+                    <img src="{{ catalog.image.url }}" class="img-fluid" alt="{{catalog.title}}">
                   </div>
                   
                   <div class="card-body">

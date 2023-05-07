@@ -30,20 +30,23 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'jazzmin',
+    'modeltranslation',
     'django.contrib.admin',
+    'django.contrib.sitemaps',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
-    'bot'
+    'bot',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -115,6 +118,16 @@ LANGUAGE_CODE = 'ru'
 TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
+
+gettext = lambda s: s
+
+LANGUAGES = (
+    ('ru', gettext('Russia')),
+    ('uz', gettext('Uzbek')),
+)
+LOCALE_PATHS = (
+    BASE_DIR / 'locale',
+)
 
 USE_TZ = True
 
