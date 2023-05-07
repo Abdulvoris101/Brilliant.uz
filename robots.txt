@@ -1,8 +1,8 @@
 User-agent: *
-Disallow:
+Disallow: /data.json
 
 User-agent: Googlebot
-Disallow:
+Disallow: /data.json
 
 
 User-agent: *
