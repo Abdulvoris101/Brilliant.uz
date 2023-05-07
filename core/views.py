@@ -7,10 +7,11 @@ from django.contrib import messages
 from django.contrib.sitemaps import Sitemap
 from django.shortcuts import reverse
 
+
 class StaticViewSitemap(Sitemap):
     priority = 1
     changefreq = 'daily'
-
+    
 
     i18n = True
 

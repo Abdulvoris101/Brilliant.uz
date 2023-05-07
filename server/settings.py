@@ -24,7 +24,7 @@ ALLOWED_HOSTS = ['*']
 # os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
 # django.setup()
     
-
+SITE_ID=1
 # Application definition
 
 INSTALLED_APPS = [
@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'jazzmin',
     'modeltranslation',
     'django.contrib.admin',
+    'django.contrib.sites',
     'django.contrib.sitemaps',
     'django.contrib.auth',
     'django.contrib.contenttypes',
