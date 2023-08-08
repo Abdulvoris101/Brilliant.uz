@@ -53,3 +53,5 @@ vine==5.0.0
 wcwidth==0.2.6
 whitenoise==6.4.0
 yarl==1.8.2
+wheel==0.41.0
+uWSGI==2.0.22
